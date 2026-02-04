@@ -4,8 +4,9 @@ import org.junit.jupiter.api.Test;
 
 class AppTest {
 
-    @Test
-    void testMainRuns() {
-        App.main(new String[]{});
-    }
+   @Test
+    void adminUserGetsAccess() {
+    assertEquals("Access granted", App.checkUser("admin"));
+}
+
 }
