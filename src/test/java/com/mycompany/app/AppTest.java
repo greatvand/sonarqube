@@ -10,4 +10,9 @@ class AppTest {
     assertEquals("Access granted", App.checkUser("admin"));
 }
 
+@Test
+void normalUserGetsDenied() {
+    assertEquals("Access denied", App.checkUser("john"));
+}
+
 }
